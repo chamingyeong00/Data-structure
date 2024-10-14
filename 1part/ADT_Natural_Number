@@ -1,0 +1,33 @@
+Nat_No 
+Boolean
+
+Nat_No Zero(n) 
+return 0;
+
+Boolean Is_Zero(n) 
+if (n) return false; 
+else return true;
+
+Nat_No Add(x, y)
+if (x+y <= INT_MAX) // =
+    return x+y;
+else
+    return INT_MAX;//
+
+Boolean Equal(x, y)
+if (x == y)
+    return true;
+else
+    return false;
+
+Nat_No Successor(x) //Nat_No
+if (x == INT_MAX)//
+    return x;
+else
+    return x+1;
+
+Nat_No Subtract(x, y)
+if (x < y) // x<y 
+    return 0;//return 0;
+else
+    return x - y;

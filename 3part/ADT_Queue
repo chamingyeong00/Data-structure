@@ -1,0 +1,51 @@
+ADT Queue
+
+Queue CreateQ(max_queue_size){
+    #define MAX_Q_SIZE 100;
+    typedef struct{
+        int key; //
+    } element;
+    element queue[MAX_Q_SIZE];
+    int front = -1;
+    int rear = -1;
+}
+
+Boolean IsFullQ(queue, max_queue_size){
+    if (rear == MAX_QUEU_SIZE - 1)//-1
+        return true;
+    return false;
+}
+
+Queue AddQ(queue, item){
+    if (IsFullQ(queue, max_queue_size))
+        return queue_full;
+    queue[++rear]=item;
+}
+//구현
+void addq(queue, item){
+    if (rear >= MAX_Q_SIZE - 1){
+        queue_full(); //()
+        return;
+    }
+    queue[++rear]=item;
+}
+
+Boolean IsEmptyQ(queue){
+    if (queue = CreateQ(max_queue_size)) //rear - front == 0 || rear == front
+        return TRUE;
+    return FALSE;
+}
+
+Element DeleteQ(queue){
+    if (queue = CreateQ(max_queue_size)) //rear - front == 0
+        return queue_empty;
+    return queue[++front];
+}
+
+//구현
+element deleteq(){
+    if (rear == front){
+        return queu_empty();
+    }
+    return queue[++front];
+}

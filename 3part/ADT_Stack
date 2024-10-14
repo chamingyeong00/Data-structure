@@ -1,0 +1,53 @@
+ADT Stack
+
+Stack CreateS(max_stack_size)
+{
+    #define MAX_STACK_SIZE 100
+    typedef struct{
+        int key;
+    } element;
+    element stack[MAX_STACK_SIZE];
+    int top = -1; //전역 변수
+}
+
+Boolean IsFull(stack, max_stack_size){
+    if (top >= MAX_STACK_SIZE -1 ) //top == max_stack_size  || top > MAX_STACK_SIZE -2
+        return True;
+    else
+        return False;
+}
+
+Stack Push(stack, item){
+    if (IsFull(stack)) //top >= MAX_STACK_SIZE-1
+        return stack_full;//False
+    stack[++top] = item;
+}
+
+//구현
+void push(element item){
+    if (top >= MAX_STACK_SIZE - 1){
+        stack_full();
+        return;
+    }
+    stack{++top} = item;
+}
+
+Boolean IsEmpty(stack){
+    if (top < 0) //top == -1 || stack == CreateS(max_stack_size)
+        return True;
+    else
+        return False;
+}
+
+Element Pop(stack){
+    if (IsEmpty(stack))
+        return stack_empty();    
+    return stack[top--];
+}
+
+//구현
+element pop(){
+    if (top == -1)
+        return stack_empty();
+    return stack[top--];
+}

@@ -1,0 +1,42 @@
+#define MAX_STACK_SIZE 100
+
+typedef struct{
+    int x;
+    int y;
+    int dir;
+} offset;
+
+offset move[8];
+
+typedef struct{
+    short int row;
+    short int col;
+    short int dir;
+} element;
+element stack[MAX_STACK_SIZE];
+
+maze[][]; //미로
+mark[][]; //기존에 갔다왔떤 길
+next_row = row + move[dir].x;
+next_col = col + move[dir].y;
+
+while (stack is not empty){ //stack is not empty
+    <row, col, dir> = delete from top of stack //pop();
+    while (there are more moves from current position){//dir < 8
+        <next_row, next_col> = coordinate of next move; //
+        dir = direction of move;
+        if ((next_row = EXIT_ROW)&&(next_col = EXIT_COL)){//
+            success;
+        }
+        if (maze[next_row][next_col] == 0 && mark[next_row][next_col] == 0){
+            mark[next_row][next_col] = 1;
+            add <row, col, dir> to the top of the stack;
+            row = next_row;
+            col = next_col;
+            dir = north;
+        }
+        dir++;
+    }
+
+}
+printf("No path found \n");

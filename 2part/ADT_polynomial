@@ -1,0 +1,15 @@
+ADT Polynomial
+지수(exponent) 계수(coefficient) 
+<expon, coef>
+Polynomial Zero() return the initialization polynomial
+Boolean IsZero(poly) check poly가 0 return true or !0 return false
+Coefficient Coef(poly, expon) if (expon belong poly) return poly에서 expon의 coef의 값
+                                else return zero
+Exponent Lead_Exp(poly) return poly의 최고expon value
+Polynomial Attach(poly, coef, expon) if (expon, coef belong poly) return error
+                                        else return add poly에 coef, expon
+Polynomial Remove(poly, expon) if (expon belong poly) return remove poly에 expon
+                                else return error
+Polynomial SingleMult(poly, coef, expon) return mult poly에 coef, expon
+Polynomial Add(poly1, poly2) return add poly1, poly2
+Polynomial Mult(poly1, poly2) return mult poly1, poly2

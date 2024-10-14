@@ -1,0 +1,6 @@
+ADT Array
+object : p(x) = a1*x^e1 + .. + an&x^en 
+        <ei, ai>
+Array Create(j, list) j차원의 list생성
+Item Retrieve(A, i) A리스트의 i번째에 저장된 값
+Array Store(A, i, x) A리스트의 i번째에 x값 저장

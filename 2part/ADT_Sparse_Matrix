@@ -1,0 +1,9 @@
+ADT Sparese_Matrix
+object : <row, column, value>
+Sparse_Matrix Create(rows, cols) return rows*cols Matrix
+Sparse_Matrix Transpose(a) return a^T //a[i][j]=v -> c[j][i]=v;
+Sparse_Matrix Add(a, b) if (a.size == b.size) return a+b Matrix //a[i][j] + b[i][j] = c[i][j]
+                            elser return error
+Sparse_Matrix Multiply(a, b) if (a.col.size == b.row.size ) return a*b Matrix 
+                                //시그마 k=1, k<max (a[i][k]*b[k][j]) = c[i][j];
+                            else return error
