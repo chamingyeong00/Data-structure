@@ -17,7 +17,7 @@ int eval(void){
     
     while (token != eos){
         if (token == operand)
-            push(token - '0');
+            push(symbol - '0');
         else{
             int op2 = pop();
             int op1 = pop();

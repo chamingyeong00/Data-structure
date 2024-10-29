@@ -37,3 +37,14 @@ element pop()
     free(temp);
     return item;
 }
+
+if (!(*head))
+	return;
+else{
+	for(struct node *temp = *head; temp->rlink->rlink != ptr; temp=temp->rlink){
+        struct node delete = temp->llink;
+        temp-llink = per:
+        ptr-orlink = temp:
+        free)delete)
+    }
+}

@@ -10,9 +10,6 @@ precedence stack[MAX_STACK_SIZE];
 int isp[] = {0, 19, 12, 12, 13, 13, 13, 0};
 int icp[] = {20, 19, 12, 12, 13, 13, 13, 0};
 
-typedef struct{
-        int key;
-} element;
 int top = -1;
 
 expr[] //infix저장
