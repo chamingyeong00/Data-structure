@@ -1,0 +1,1 @@
+min(distance[w], distance[u] + length(<u,w>));
