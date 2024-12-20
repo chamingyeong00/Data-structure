@@ -32,8 +32,7 @@ void reflexive_transitive_closure(cost[][n], distance[][n]){
     for (k=0; k<n; k++){
         for (i=0; i<n; i++){
             for (j=0; j<n; j++){
-                if (distance[i][k] + distance[k][j] < distance[i][j])
-                    distance[i][j] = distance[i][j] || distance[i][k] + distance[k][j];
+                distance[i][j] = distance[i][j] || distance[i][k] + distance[k][j];
             }
         }
     }

@@ -1,9 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/it/micha/Data-structure/7part/adjust'
-relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _adjust, symObjAddr: 0x0, symBinAddr: 0x100003C84, symSize: 0x118 }
-  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _adjust, symObjAddr: 0x0, symBinAddr: 0x100003C84, symSize: 0x118 }
-  - { offsetInCU: 0x9D, offset: 0x9D, size: 0x8, addend: 0x0, symName: _heapsort, symObjAddr: 0x118, symBinAddr: 0x100003D9C, symSize: 0xEC }
-  - { offsetInCU: 0xF9, offset: 0xF9, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x204, symBinAddr: 0x100003E88, symSize: 0xE0 }
-...

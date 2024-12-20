@@ -15,15 +15,15 @@ struct thread_tree *postsucc(struct thread_tree *ptr){
     if (parent->right_child == ptr){
         return parent;
     }
-    else if (parent->right_thread == 1){
-        return parent;
-    }
-    else{
-        struct thread_tree *temp = ptr->right_child;
-        while (temp->left_thread == 0){
-            temp = temp->left_child;
+    else if (parent->left_child == ptr){
+        if (parent->right_thread == 1)
+            return parent;
+        else{
+            struct thread_tree *temp = ptr->right_child;
+            while (!temp && temp->right_thread == 0){
+                temp = temp->left_child;
+            }
         }
         return temp;
     }
-
 }
